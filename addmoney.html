@@ -24,7 +24,7 @@
         <div class="flex ml-2">
             <img src="assets/Group.png" alt="" class="h-[50px]">
             <div class="ml-3">
-                <h2>$<span>45000</span></h2>
+                <h2>$<span id="avaible-balance">45000</span></h2>
                 <p>Available Balance</p>
             </div>
         </div>
@@ -34,10 +34,9 @@
     </div>
 
     <div>
-        <h1 class="text-[24px] mt-3 font-bold">🔥 Welcome to Payooo!</h1>
+        <h1 class="text-[24px] mt-3">🔥 Welcome to Payooo!</h1>
         <p class="mt-2 mb-3 ml-2 mr-2 text-[#0808081a] text-[16px]">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
     </div>
-
         <div class=" min-h-[200px] grid grid-cols-3 max-w-lg mx-auto gap-4 ml-2 mr-2">
 
             <div class="border-2 border-gray-300 text-center p-3 pt-5 pb-5 rounded-[12px] bg-white shadow-lg">
@@ -74,7 +73,7 @@
                 <form action="" class="bg-white rounded-2xl p-8">
                     <div>
                         <h1>Select A Bank</h1>
-                        <select class="select bg-[#f4f5f7] mt-3 rounded-[50px] p-3 pr-[290px]">
+                        <select id="bank" class="select bg-[#f4f5f7] mt-3 rounded-[50px] p-3 pr-[290px]">
                             <option>Pick a Bank</option>
                             <option>One Bank LTD</option>
                             <option>Sonali Bank LTD</option>
@@ -85,22 +84,23 @@
                     </div>
                     <div>
                         <h2 class="mt-2 mb-2">Bank Account Number</h2>
-                        <input type="text" placeholder="Enter 11 digit account number" class="p-3 pr-[215px] bg-[#f4f5f7] rounded-[50px]">
+                        <input id="bank_acc" type="text" placeholder="Enter 11 digit account number" class="p-3 pr-[215px] bg-[#f4f5f7] rounded-[50px]">
                     </div>
                     <div>
                         <h2 class="mt-2 mb-2">Amount to Add</h2>
-                        <input type="text" placeholder="Add Amount to withdraw" class="p-3 pr-[215px] bg-[#f4f5f7] rounded-[50px]">
+                        <input id="add_amount" type="text" placeholder="Add Amount to withdraw" class="p-3 pr-[215px] bg-[#f4f5f7] rounded-[50px]">
                     </div>
                     <div>
                         <h1 class="mt-2 mb-2">Pin Number</h1>
-                        <input type="text" placeholder="Enter 4 digit pin number" class="p-3 pr-[215px] bg-[#f4f5f7] rounded-[50px]">
+                        <input id="add_pin" type="text" placeholder="Enter 4 digit pin number" class="p-3 pr-[215px] bg-[#f4f5f7] rounded-[50px]">
                     </div>
-                    <button class="btn bg-[#0874F2] rounded-[50px] pl-[168px] pr-[168px] pt-[14px] pb-[14px] text-[20px] mt-8 text-white">Add Money</button>
+                    <button id="add_money_btn" class="btn bg-[#0874F2] rounded-[50px] pl-[168px] pr-[168px] pt-[14px] pb-[14px] text-[20px] mt-8 text-white">Add Money</button>
                 </form>
             </div>
         </div>
 
 
     </div>
+    <script src="./addmoney.js"></script>
 </body>
 </html>
