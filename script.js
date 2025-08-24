@@ -18,6 +18,6 @@ document.getElementById("loginButton").addEventListener("click", function(e) {
         console.log("All values matched")
     }
     else {
-        console.log("Invalid Credentials")
+        alert("Invalid Credentials")
     }
 })
