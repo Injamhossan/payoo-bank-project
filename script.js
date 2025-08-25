@@ -1,23 +1,24 @@
 // Login Button Function
-
-document.getElementById("loginButton").addEventListener("click", function(e) {
+// login button functionality
+document.getElementById("loginButton").addEventListener("click",function (e){
     e.preventDefault()
-    console.log("login button clicked");
-    const mobileNumber = 01641108312
-    const pinNumber = 1234
-    const mobileNumberValue = document.getElementById("mobile-number").value
-    const mobileNumberValueConverted = parseInt (mobileNumberValue)
+    const mobileNumber = 12345678910
+    const pin = 1234
+    
+    const mobileNumberValue = document.getElementById
+    ("mobile-number").value
+    const mobileNumberValueConverted = parseInt(mobileNumberValue)
+
 
     const pinNumberValue = document.getElementById("pin-number").value
-    const pinNumberValueConverted = parseInt (pinNumberValue)
 
-    console.log(mobileNumberValueConverted, pinNumberValueConverted)
+    const pinNumberValueConverted = parseInt(pinNumberValue)
 
-    if(mobileNumberValueConverted === mobileNumber && pinNumberValueConverted === pinNumber) {
-        window.location.href="./home.html"
-        console.log("All values matched")
+    if(mobileNumberValueConverted === mobileNumber && pinNumberValueConverted===pin){
+        window.location.href="./addmoney.html"
     }
-    else {
-        alert("Invalid Credentials")
+
+    else{
+        alert("Invalid Credentials!")
     }
 })
